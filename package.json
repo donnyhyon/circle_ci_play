@@ -11,7 +11,7 @@
     "cypress::open": "cypress open",
     "cypress:run": "cypress run",
     "server": "node src/server.js",
-    "ci": "start-server-and-test server http://localhost:3000 cypress:run"
+    // "ci": "start-server-and-test server http://localhost:3000 cypress:run"
   },
   "keywords": [],
   "author": "",
