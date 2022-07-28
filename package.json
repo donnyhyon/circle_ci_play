@@ -1,0 +1,29 @@
+{
+  "name": "cypress-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "dev": "nodemon . & npm run scss",
+    "scss": "sass --watch src/scss/main.scss public/styles/main.css",
+    "cypress::open": "cypress open",
+    "cypress:run": "cypress run",
+    "server": "node src/server.js",
+    "ci": "start-server-and-test server http://localhost:3000 cypress:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "govuk-frontend": "^4.2.0",
+    "sass": "^1.54.0"
+  },
+  "devDependencies": {
+    "cypress": "^10.3.1",
+    "nodemon": "^2.0.19",
+    "start-server-and-test": "^1.14.0"
+  }
+}
