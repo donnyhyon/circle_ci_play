@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "start-server-and-test server http://localhost:3000 cypress:run",
     "start": "node .",
     "dev": "nodemon . & npm run scss",
     "scss": "sass --watch src/scss/main.scss public/styles/main.css",
